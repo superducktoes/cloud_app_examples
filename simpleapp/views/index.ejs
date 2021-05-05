@@ -1,0 +1,21 @@
+<script src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script src="/handlePing.js"></script>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <br>
+    <form method="POST" id="ping" action="/submit-form">
+    <input type="text" name="host", value="1.1.1.1">
+    <input type="submit", value="Submit">
+    </form>
+
+    <h3>Status: <%=status%></h3>
+  </body>
+</html>
